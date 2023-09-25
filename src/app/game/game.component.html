@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+    <h1 class="header">ROCK PAPER SCISSORS</h1>
+    <div class="nameid">
+        <input class="name" type="Name" placeholder="Name" id="username" [(ngModel)]="playername" />
+    </div>
+    <div class="scoreboard">
+        <div class="player">
+            <h1>Player</h1>
+            <div class="player">
+                <p>{{ getPlayerScore() }}</p>
+            </div>
+
+        </div>
+        <div class="computer">
+            <h1>Computer</h1>
+            <div class="player">
+                <p>{{ getComputerScore() }}</p>
+            </div>
+            <p>
+        </div>
+    </div>
+    <div class="info" *ngIf="getRounds()">
+        <p>CHOOSE YOUR MOVE</p>
+        <P>ROUNDS LEFT: {{ getRounds() }}</P>
+        <p>{{playername}} </p>
+    </div>
+    <div class="info" *ngIf="!getRounds()">
+        <p>GAME OVER</p>
+        <p>{{ getWinner() }}</p>
+    </div>
+    <div class="choices" *ngIf="getRounds()">
+        <button class="btn" (click)="handleClick('rock')">ROCK</button>
+        <button class="btn" (click)="handleClick('paper')">PAPER</button>
+        <button class="btn" (click)="handleClick('scissors')">SCISSORS</button>
+    </div>
+
+    <div class="restart" *ngIf="!getRounds()">
+        <button class="btn" (click)="restartGame()">RESTART</button>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>COMPUTER SELECTED: {{computerChoice}}</p>
+        </div>
+        <div>
+            <p>PLAYER SELECTED: {{playerChoice}}</p>
+        </div>
+    </div>
+    <div class="nav">
+        <a class="nave" aria-current="page" routerLink="/score">SCORE</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.nav{
+
+    height: 30px;
+    width: 90px;
+    background-color: rgb(190, 34, 55);
+    margin-top: 10rem;
+    border-radius: 9px;
+    margin-left: 85rem;
+}
+.nave{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding: 10px;
+    font-size: 19px;
+    
+}
+table{
+    margin-left: 10rem;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.nav:hover
+{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}

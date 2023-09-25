@@ -1,0 +1,26 @@
+<body>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">S/NO</th>
+        <th scope="col">NAME</th>
+        <th scope="col">USER SCORE</th>
+        <th scope="col">COMPUTER SCORE</th>
+        <th scope="col">RESULT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of result">
+        <th scope="'row"> {{u.id}}</th>
+        <td> {{u.name}}</td>
+        <td> {{u.user_score}}</td>
+        <td> {{u.comp_score}}</td>
+        <td> {{u.status}}</td>
+    </tbody>
+  </table>
+
+  <div class="nav">
+    <a class="nave" aria-current="page" routerLink="" style="color: aliceblue;">&nbsp;PLAY GAME</a>
+  </div>
+</body>

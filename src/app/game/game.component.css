@@ -1,0 +1,117 @@
+.choices,
+.restart
+{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+.header
+{
+    color: rgb(250, 249, 249);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+.nameid{
+    
+text-align: center;
+}
+.name{
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.btn
+{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(190, 34, 55);
+    color: white;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}
+
+.btn:active
+{
+    background-color: white;
+    color: rgb(190, 34, 55);
+}
+.player
+{
+    font-size: 2rem;
+}
+
+.scoreboard
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.scoreboard > div,
+.info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 1rem;
+
+}
+
+.info
+{
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    gap: 30px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+.nav{
+    
+  
+    height: 25px;
+    width: 60px;
+    background-color: rgb(190, 34, 55);
+   
+    border-radius: 9px;
+    margin-left: 90rem;
+}
+.nave{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding: 14px;
+ 
+}
+.nav:hover
+{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}
